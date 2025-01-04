@@ -1,0 +1,37 @@
+{
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Rosé Pine (no italics)",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "vim.smartRelativeLine": true,
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": false,
+  "breadcrumbs.enabled": false,
+  "editor.guides.bracketPairs": false,
+  "workbench.statusBar.visible": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono Regular', Consolas, 'Courier New', monospace",
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#ffffff31"
+  },
+
+  "vim.handleKeys": {
+    "<C-x>": false, // Allow VS Code's cut command to work
+    "<C-n>": false, // Allow VS Code's undo command to work
+    "<C-v>": false, // Allow VS Code's paste command to work
+    "<C-z>": false, // Allow VS Code's undo command to work
+    "<C-w>": false, // Allow VS Code's undo command to work
+    "<C-b>": false, // Allow VS Code's undo command to work
+    "<C-p>": false, // Allow VS Code's undo command to work
+    "ctrl+s": false // Allow VS Code's save command to work
+  },
+  // custom css here
+  "vscode_custom_css.imports": ["file:///C:/Users/ACER/vscode_customcss.css"],
+  "chat.commandCenter.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false
+}
