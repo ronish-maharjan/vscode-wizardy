@@ -16,22 +16,27 @@
   "workbench.statusBar.visible": true,
   "editor.fontFamily": "'JetBrainsMono Nerd Font Mono Regular', Consolas, 'Courier New', monospace",
   "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#ffffff31"
+    "editor.selectionBackground": "#ffffff31",
+    "editorCursor.foreground": "#FFFFFF90"
   },
 
   "vim.handleKeys": {
-    "<C-x>": false, // Allow VS Code's cut command to work
-    "<C-n>": false, // Allow VS Code's undo command to work
-    "<C-v>": false, // Allow VS Code's paste command to work
-    "<C-z>": false, // Allow VS Code's undo command to work
-    "<C-w>": false, // Allow VS Code's undo command to work
-    "<C-b>": false, // Allow VS Code's undo command to work
-    "<C-p>": false, // Allow VS Code's undo command to work
-    "ctrl+s": false // Allow VS Code's save command to work
+    "<C-x>": false, // to make vscode use this for cut the text
+    "<C-n>": false, // to make vscode use this for creating new file
+    "<C-v>": false, // to make vscode use this
+    "<C-z>": false, // to make vscode use this
+    "<C-w>": false, // to make vscode use this
+    "<C-b>": false, // to make vscode use this
+    "<C-p>": false, // to make vscode use this
+    "<C-t>": false, // to make vscode use this
+    "ctrl+s": false // to make vscode use this
   },
   // custom css here
   "vscode_custom_css.imports": ["file:///C:/Users/ACER/vscode_customcss.css"],
   "chat.commandCenter.enabled": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.navigationControl.enabled": false
+  "workbench.navigationControl.enabled": false,
+  "editor.fontSize": 17,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true
 }
