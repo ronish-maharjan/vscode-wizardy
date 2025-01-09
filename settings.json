@@ -21,15 +21,15 @@
   },
 
   "vim.handleKeys": {
+    "<C-z>": false, // to make vscode use this for redo
     "<C-x>": false, // to make vscode use this for cut the text
-    "<C-n>": false, // to make vscode use this for creating new file
-    "<C-v>": false, // to make vscode use this
-    "<C-z>": false, // to make vscode use this
-    "<C-w>": false, // to make vscode use this
-    "<C-b>": false, // to make vscode use this
-    "<C-p>": false, // to make vscode use this
-    "<C-t>": false, // to make vscode use this
-    "ctrl+s": false // to make vscode use this
+    "<C-v>": false, // to make vscode use this for pasting from system clipboard
+    "<C-w>": false, // to make vscode use this to exit the file
+    "<C-n>": false, // to make vscode use this for opening file explorer
+    "<C-p>": false, // to make vscode use this to open command pallet
+    "<C-t>": false, // to make vscode use this to open terminal
+    "<C-b>": false, // to make vscode use this to open the explorer
+    "<C-s>": false // to make vscode use this to save the file
   },
   // custom css here
   "vscode_custom_css.imports": ["file:///C:/Users/ACER/vscode_customcss.css"],
@@ -38,5 +38,6 @@
   "workbench.navigationControl.enabled": false,
   "editor.fontSize": 17,
   "editor.formatOnType": true,
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "vim.useSystemClipboard": true
 }
