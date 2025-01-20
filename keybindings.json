@@ -39,5 +39,11 @@
     "key": "d",
     "command": "deleteFile",
     "when": "explorerViewletFocus && !inputFocus"
+  },
+
+  // Create a new untitled file
+  {
+    "key": "alt+a",
+    "command": "workbench.action.files.newUntitledFile"
   }
 ]
