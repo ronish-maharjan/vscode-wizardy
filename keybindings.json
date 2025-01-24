@@ -19,7 +19,14 @@
     "command": "workbench.view.explorer",
     "when": "!activeViewlet || activeViewlet != 'workbench.view.explorer'"
   },
-
+  
+  // Create a new untitled file
+  {
+    "key": "alt+a",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  
+  //File Explorer Shortcuts
   //create new file
   {
     "key": "a",
@@ -41,9 +48,31 @@
     "when": "explorerViewletFocus && !inputFocus"
   },
 
-  // Create a new untitled file
+  // rename the file in the explorer
   {
-    "key": "alt+a",
-    "command": "workbench.action.files.newUntitledFile"
-  }
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+
+  // copy the file in the explorer
+  {
+    "key": "c",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+
+  // paste the file in the explorer
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+
+  // cut the file in the explorer
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
 ]
