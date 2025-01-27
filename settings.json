@@ -52,6 +52,10 @@
   "editor.formatOnType": true, // Automatically formats code as you type.
   "editor.formatOnPaste": true, // Automatically formats code when pasting text.
   "vim.useSystemClipboard": true, // Allows Vim to use the system clipboard for copy/paste.
+  "editor.cursorSurroundingLines": 14, // Makes 8 line visible on top and below when you scroll
+  "editor.scrollBeyondLastLine": true, // Makes able to scroll below the last line
+  "editor.mouseWheelScrollSensitivity": 1.5, // Makes mouse scroll smooth
+
 
   // Miscellaneous settings
   "workbench.activityBar.visible": false, // Hides the activity bar (sidebar).
