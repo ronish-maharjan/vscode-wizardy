@@ -1,16 +1,16 @@
 {
   // General settings
+  "editor.stickyScroll.enabled": false, // Disable Sticky upcode shower
   "workbench.startupEditor": "none", // Disables the startup editor and opens no file on start.
   "editor.minimap.enabled": false, // Disables the minimap for code overview.
   "editor.wordWrap": "on", // Enables word wrapping to avoid horizontal scrolling.
-  "workbench.colorTheme": "Rosé Pine (no italics)", // Sets the color theme to "Rosé Pine (no italics)".
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default code formatter.
   "editor.formatOnSave": true, // Automatically formats code when saving a file.
   "vim.smartRelativeLine": true, // Enables relative line numbers in Vim mode.
   "editor.lineNumbers": "relative", // Shows relative line numbers in the editor.
   "editor.cursorBlinking": "solid", // Sets the cursor to a solid blinking style.
   "workbench.activityBar.location": "hidden", // Hides the activity bar (the sidebar).
-  "workbench.editor.showTabs": true, // Shows editor tabs at the top for open files.
+  "workbench.editor.showTabs": "multiple", // Shows editor tabs at the top for open files.
   "workbench.editor.enablePreview": false, // Disables file preview mode when opening files.
   "breadcrumbs.enabled": false, // Disables breadcrumb navigation at the top of the editor.
   "editor.guides.bracketPairs": false, // Disables bracket pair guides (lines connecting brackets).
@@ -33,14 +33,14 @@
     "<C-b>": false, // Disables Vim from overriding Ctrl+B (Open Explorer) with its own functionality.
     "<C-s>": false // Disables Vim from overriding Ctrl+S (Save) with its own functionality.
   },
-
   // Vim yank highlighting settings
   "vim.highlightedyank.color": "#ffffff41", // Sets the highlight color for yanked text.
+  "vim.useSystemClipboard": true, // Allows Vim to use the system clipboard for copy/paste.
   "vim.highlightedyank.duration": 110, // Sets the duration for highlighting yanked text in milliseconds.
   "vim.highlightedyank.enable": true, // Enables yank highlighting.
 
   // Custom CSS for VSCode
-  "vscode_custom_css.imports": ["file:///C:/Users/home/vscode_customcss.css"], // Loads a custom CSS file for VSCode UI customization.
+  "vscode_custom_css.imports": ["file:///C:/Users/ACER/vscode_customcss.css"], // Loads a custom CSS file for VSCode UI customization.
 
   // Disabled features in VSCode
   "chat.commandCenter.enabled": false, // Disables the chat command center.
@@ -48,16 +48,16 @@
   "workbench.navigationControl.enabled": false, // Disables navigation control features.
 
   // Additional editor settings
-  "editor.fontSize": 15, // Sets the editor font size to 15px.
-  "editor.formatOnType": true, // Automatically formats code as you type.
-  "editor.formatOnPaste": true, // Automatically formats code when pasting text.
-  "vim.useSystemClipboard": true, // Allows Vim to use the system clipboard for copy/paste.
-  "editor.cursorSurroundingLines": 14, // Makes 8 line visible on top and below when you scroll
+  "editor.fontSize": 16, // Automatically formats code when pasting text.
+  "editor.cursorSurroundingLines": 8, // Makes 8 line visible on top and below when you scroll
   "editor.scrollBeyondLastLine": true, // Makes able to scroll below the last line
   "editor.mouseWheelScrollSensitivity": 1.5, // Makes mouse scroll smooth
-
+  "workbench.iconTheme": "vs-minimal", // Set Icon Theme
+  "workbench.colorTheme": "Rosé Pine (no italics)", // Sets the color theme to "Rosé Pine (no italics)".
 
   // Miscellaneous settings
   "workbench.activityBar.visible": false, // Hides the activity bar (sidebar).
-  "window.zoomLevel": -1 // Sets the zoom level for the window (default is 0).
+  "window.zoomLevel": 0, // Sets the zoom level for the window (default is 0).
+  "editor.formatOnType": true, // Format on type
+  "editor.formatOnPaste": true // Format on Pasting the code
 }
