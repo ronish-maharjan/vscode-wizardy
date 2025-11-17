@@ -12,7 +12,7 @@
   "editor.cursorBlinking": "solid", // Sets the cursor to a solid blinking style.
   "editor.fontFamily": "'FiraCode Nerd Font Regular','JetBrainsMono Nerd Font Mono Regular', Consolas, 'Courier New', monospace", // Sets the font family for the editor.
   "editor.fontSize": 16, // Automatically formats code when pasting text.
-  "editor.cursorSurroundingLines": 8, // Makes 8 line visible on top and below when you scroll
+  "editor.cursorSurroundingLines": 20, // Makes 8 line visible on top and below when you scroll
   "editor.scrollBeyondLastLine": true, // Makes able to scroll below the last line
   "editor.mouseWheelScrollSensitivity": 1.5, // Makes mouse scroll smooth
   "editor.guides.bracketPairs": false, // Disables bracket pair guides (lines connecting brackets).
@@ -24,8 +24,9 @@
   // Workbench / Window Settings
   // =========================
   "workbench.activityBar.location": "hidden", // Hides the activity bar (the sidebar).
-  "workbench.editor.showTabs": "multiple", // Shows editor tabs at the top for open files.
-  "workbench.editor.enablePreview": false, // Disables file preview mode when opening files.
+  "workbench.editor.showTabs": "none",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.enablePreview": true, // Disables file preview mode when opening files.
   "breadcrumbs.enabled": false, // Disables breadcrumb navigation at the top of the editor.
   "workbench.statusBar.visible": true, // Ensures the status bar at the bottom is visible.
   "workbench.iconTheme": "vs-minimal", // Hides the activity bar (sidebar).
@@ -52,6 +53,17 @@
     "<C-b>": false, // Disables Vim from overriding Ctrl+B (Open Explorer) with its own functionality.
     "<C-s>": false // Disables Vim from overriding Ctrl+S (Save) with its own functionality.
   },
+  // This line of code make the cursor in the middle of screen when moving up or down
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    }
+  ],
 
   // =========================
   // Color Customizations
@@ -85,5 +97,11 @@
   // Updates / Extensions
   // =========================
   "extensions.autoCheckUpdates": false,
-  "update.mode": "none"
+  "update.mode": "none",
+  "git.openRepositoryInParentFolders": "never",
+
+  // open svg in xml not in image preview
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  }
 }
